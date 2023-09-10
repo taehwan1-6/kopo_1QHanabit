@@ -24,6 +24,19 @@ public class SavingProductController {
         this.savingProductService = savingProductService;
     }
 
+    @GetMapping("saving")
+    public String savingDetails() {
+        return "product/saving";
+    }
+
+    @GetMapping("deposit")
+    public String depositDetails() {
+        return "product/deposit";
+    }
+/*
+===================== 아래 일단 대기 =========================
+ */
+
     @GetMapping("/products")
     public String productList(Model model) {
         List<SavingProductVO> savingProductVOList = savingProductService.selectAll();
@@ -46,6 +59,11 @@ public class SavingProductController {
         model.addAttribute("productVO", savingProductVO);
 
         return "product/product-details";
+    }
+
+    @GetMapping("/product-mydata")
+    public String productMydata() {
+        return "product/product-mydata";
     }
 
 //    @GetMapping("/product/list")

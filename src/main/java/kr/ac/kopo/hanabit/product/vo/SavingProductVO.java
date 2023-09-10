@@ -5,7 +5,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 @ToString
-@Setter @Getter
+@Setter
+@Getter
 public class SavingProductVO {
 
     private int id;
@@ -19,5 +20,4 @@ public class SavingProductVO {
     private String imgName;
     private String imgPath;
     private String createdAt;
-
 }
