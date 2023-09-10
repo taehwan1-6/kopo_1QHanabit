@@ -1,0 +1,558 @@
+@charset "utf-8";
+/** 예금 **/
+.img_deposit {
+    overflow: hidden;
+    background: url(https://og.kakaobank.io/view/c7444e4b-6029-4506-90cc-fd5ee33fcfe6) no-repeat
+}
+
+.deposit_product_1 .content_wrapper {
+    padding: 134px 0
+}
+
+.deposit_product_1 h3, .deposit_product_1 p {
+    padding-left: 36px
+}
+
+.deposit_product_2 {
+    background-color: #f7f7f7
+}
+
+.deposit_product_2 .content_wrapper {
+    padding: 209px 0
+}
+
+.deposit_product_3 .content_wrapper {
+    padding: 168px 0 170px
+}
+
+.deposit_product_4 {
+    background-color: #3e4459
+}
+
+.deposit_product_4 h3 {
+    color: #fff
+}
+
+.deposit_product_4 p {
+    color: #fff;
+    opacity: .6
+}
+
+.deposit_product_4 .content_wrapper {
+    padding: 212px 0
+}
+
+.deposit_product_5 {
+    background-color: #f7f7f7
+}
+
+.deposit_product_5 .content_wrapper {
+    padding: 169px 0
+}
+
+.deposit_visual1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 528px;
+    height: 144px;
+    margin: auto 0
+}
+
+.deposit_visual1 .bar_arr {
+    position: relative;
+    width: 326px;
+}
+
+.deposit_visual1 .line_arr {
+    position: absolute;
+    top: 36px;
+    left: 44px;
+    width: 100%;
+    height: 1px;
+    background-color: #c8c8c8;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+}
+
+.deposit_visual1 .line_arr .img_arr {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -12px;
+    width: 12px;
+    height: 12px;
+    margin: auto 0;
+    background-position: -990px -50px
+}
+
+.deposit_visual1 .list_info {
+    overflow: hidden;
+    width: 570px
+}
+
+.deposit_visual1 .list_info li {
+    float: left;
+    position: relative;
+    width: 110px;
+    margin-right: 80px
+}
+
+.deposit_visual1 .img_deposit {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto
+}
+
+.deposit_visual1 .img_info1 {
+    background-position: -360px -390px
+}
+
+.deposit_visual1 .img_info2 {
+    background-position: -440px -390px
+}
+
+.deposit_visual1 .img_info3 {
+    background: none
+}
+
+.deposit_visual1 .img_info3_active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url(https://og.kakaobank.io/view/ff041445-397b-4792-956d-69ad1b1a490b) no-repeat
+}
+
+.deposit_visual1 .txt_info {
+    display: block;
+    margin-top: 26px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.deposit_visual1 .on .txt_info {
+    font-weight: bold;
+    color: #309C75
+}
+
+.deposit_visual2 {
+    position: absolute;
+    top: 48px;
+    left: 21px
+}
+
+.deposit_visual2 .img_phone {
+    display: block;
+    width: 353px;
+    height: 342px;
+    padding-top: 131px;
+    background-position: 0 0
+}
+
+.deposit_visual2 .tit_info {
+    display: block;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 1.83;
+    color: #309C75;
+    text-align: center
+}
+
+.deposit_visual2 .bg_progress {
+    display: block;
+    width: 254px;
+    height: 2px;
+    margin: 41px auto 0;
+    background-color: #d8d8d8
+}
+
+.deposit_visual2 .bar_progress {
+    display: block;
+    position: relative;
+    height: 2px;
+    background-color: #000;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+}
+
+.deposit_visual2 .img_circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    margin: auto 0;
+    background-position: -990px 0
+}
+
+.deposit_visual2 .img_load {
+    position: absolute;
+    bottom: 77px;
+    right: 58px;
+    width: 16px;
+    height: 16px;
+    background-position: -990px -30px;
+    -webkit-transition: transform 1s;
+    transition: transform 1s;
+}
+
+.deposit_visual2 .bg_gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    background-image: linear-gradient(to bottom, rgba(247, 247, 247, 0), #f7f7f7)
+}
+
+.deposit_visual2 .click_forecast {
+    display: block;
+    width: 264px;
+    height: 37px;
+    margin: 102px 0 0 44px;
+    border: 1px solid #30a9ff;
+    border-radius: 3px;
+    background-color: #b8e1ff;
+    box-sizing: content-box;
+    opacity: 0;
+    transition: opacity .3s cubic-bezier(.6, .2, .1, 1)
+}
+
+.deposit_visual2 .hide_forecast {
+    position: absolute;
+    bottom: 0;
+    left: 34px;
+    right: 33px;
+    height: 114px;
+    background-color: #f7f7f7
+}
+
+.deposit_visual2 .forcast_txt {
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 10px;
+    padding: 5px;
+    position: absolute;
+    width: 184px;
+    height: 25px;
+    bottom: 72px;
+    right: 53px;
+    border-radius: 3px;
+}
+
+.deposit_visual3 {
+    position: absolute;
+    top: 77px;
+    left: 441px;
+}
+
+.deposit_visual3 .phone_group {
+    -webkit-transition: transform 0.8s, opacity 0.8s;
+    transition: transform 0.8s, opacity 0.8s;
+}
+
+.deposit_visual3 .img_phone {
+    width: 622px;
+    height: 382px;
+    background-position: -360px 0
+}
+
+.deposit_visual3 .line_interest {
+    position: absolute;
+    top: 0;
+    left: 213px;
+    width: 1px;
+    height: 190px;
+    text-align: right;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.deposit_visual3 .line_interest_max {
+    height: 100%;
+    position: relative;
+}
+
+.deposit_visual3 .bg_bar {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    border-right: 1px solid #309C75;
+    -webkit-transition: height 1.7s;
+    transition: height 1.7s;
+}
+
+.deposit_visual3 .bg_bar:after {
+    position: absolute;
+    top: -7px;
+    left: -3px;
+    width: 7px;
+    height: 7px;
+    border-radius: 7px;
+    background-color: #309C75;
+    content: '';
+}
+
+.deposit_visual3 .bar_item {
+    position: relative;
+}
+
+.deposit_visual3 .line_interest .txt_interest {
+    position: absolute;
+    top: -13px;
+    right: 13px;
+    width: 200px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000
+}
+
+.deposit_visual3 .line_interest .num_cash {
+    position: absolute;
+    top: 18px;
+    right: 11px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 53px;
+    color: #309C75
+}
+
+.deposit_visual3 .line_interest .num_gray {
+    color: #949494
+}
+
+.deposit_visual3 .line_interest .txt_won {
+    display: inline-block;
+    margin: 5px 0 0 3px;
+    font-size: 34px;
+    line-height: 41px;
+    vertical-align: text-top
+}
+
+.deposit_visual3 .phone_cash {
+    position: absolute;
+    top: 191px;
+    left: 254px;
+    -ms-transform: rotate(33deg) skewX(-30deg);
+    -webkit-transform: rotate(33deg) skewX(-30deg);
+    transform: rotate(33deg) skewX(-30deg);
+    font-weight: bold;
+    color: #309C75;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.deposit_visual3 .phone_cash .num_gray {
+    color: #000;
+    opacity: .3
+}
+
+.deposit_visual4 {
+    position: absolute;
+    bottom: 0;
+    left: -34px
+}
+
+.deposit_visual4 .img_phone {
+    width: 522px;
+    height: 591px;
+    background-position: 0 -480px;
+    color: #fff;
+    -webkit-transition: transform 0.6s, opacity 0.6s;
+    transition: transform 0.6s, opacity 0.6s;
+}
+
+.deposit_visual4 .txt_cash {
+    position: absolute;
+    top: 208px;
+    left: 56px;
+    font-size: 20px;
+    line-height: 38px
+}
+
+.deposit_visual4 .num_cash {
+    position: absolute;
+    top: 215px;
+    right: 57px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: right
+}
+
+.deposit_visual4 .img_dimmed {
+    position: absolute;
+    left: 227px;
+    width: 75px;
+    height: 31px;
+    background-color: #000;
+    opacity: .04
+}
+
+.deposit_visual4 .img_dimmed1 {
+    top: 363px
+}
+
+.deposit_visual4 .img_dimmed2 {
+    top: 425px
+}
+
+.deposit_visual5 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 517px;
+    width: 512px;
+    height: 512px;
+    margin: auto 0
+}
+
+.deposit_visual5 .circle_wrapper {
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+.deposit_visual5 .img_circle {
+    display: block;
+    width: 512px;
+    height: 512px;
+    background-position: -530px -480px
+}
+
+.deposit_visual5 .num_txt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 56px;
+    height: 56px;
+    margin: auto;
+    font-size: 24px;
+    line-height: 60px;
+    color: #309C75;
+    text-align: center;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.deposit_visual5 .num_txt1 {
+    left: 0;
+    right: 0
+}
+
+.deposit_visual5 .num_txt2 {
+    left: 177px
+}
+
+.deposit_visual5 .num_txt3 {
+    left: 128px
+}
+
+.deposit_visual5 .num_txt4 {
+    left: 70px
+}
+
+.deposit_visual5 .num_txt5 {
+    left: -48px;
+    width: 104px;
+    height: 104px;
+    border-radius: 104px;
+    font-size: 36px;
+    line-height: 110px;
+    background-color: #309C75;
+    color: #fff
+}
+
+/** 특판 예금 **/
+.special_product {
+    padding: 160px 0;
+    background-color: #f7f7f7
+}
+
+.special_product .emph_limit {
+    display: block;
+    font-weight: bold;
+    color: #308c6c
+}
+
+.special_visual {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 310px;
+    margin: auto 0
+}
+
+.special_visual .circle_special {
+    text-align: center
+}
+
+.special_visual .circle_special1 {
+    width: 310px;
+    height: 211px;
+    padding-top: 99px;
+    border-radius: 310px;
+    background-color: rgba(62, 68, 89, .1)
+}
+
+.special_visual .circle_special2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 259px;
+    width: 180px;
+    height: 124px;
+    margin: auto 0;
+    padding-top: 56px;
+    border-radius: 180px;
+    background-color: rgba(61, 176, 135, .9)
+}
+
+.special_visual .img_deposit {
+    display: block;
+    margin: 0 auto
+}
+
+.special_visual .img_per {
+    width: 74px;
+    height: 68px;
+    background-position: -600px -390px
+}
+
+.special_visual .txt_per {
+    display: block;
+    margin-top: 17px;
+    font-size: 22px;
+    color: #308c6c
+}
+
+.special_visual .img_plus {
+    width: 70px;
+    height: 36px;
+    background-position: -680px -390px
+}
+
+.special_visual .txt_plus {
+    display: block;
+    margin-top: 8px;
+    font-size: 21px;
+    color: #fff;
+    opacity: .9
+}
+
+/* Pixel ratio */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+    .img_deposit {
+        background-image: url(https://og.kakaobank.io/view/6c1bf746-68f8-4d81-8457-36de93697433);
+        background-size: 1042px 1071px
+    }
+
+    .deposit_visual1 .img_info3_active {
+        background-image: url(https://og.kakaobank.io/view/4e33bc28-d662-481d-94fa-d9f277d3652a);
+        background-size: 70px 70px
+    }
+}

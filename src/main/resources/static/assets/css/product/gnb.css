@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*GNB*/
+#kakaoHead {overflow:initial;position:absolute;top:0;left:0;right:0;z-index:1000;}
+#kakaoHead .nav-global a {float: none;padding:0;}
+.nav-global {position:fixed;left:0;right:0;top:0;height:80px;background:transparent;min-width: 1120px;font-family: 'Yoon 윤고딕','돋움',dotum,sans-serif;-webkit-transition: background 0.5s, color 0.5s;transition: background 0.5s, color 0.5s;}
+/* .nav-global.is-inverse {}  검정색 버전 */
+.nav-active .nav-global, .is-scrolled .nav-global{background:#fff;}
+.nav-active .nav-title, .is-scrolled .nav-title {color:#000;}
+.nav-logo {height:80px;display: inline-block;float:left;width:116px;line-height: 80px;position:relative;}
+.nav-logo a {vertical-align: middle;width:116px;height: 20px;display:inline-block}
+.nav-logo a .logo-img {width:116px;height:20px}
+.logo-active,.logo-default {position: absolute;top: 0;left: 0;bottom:0;margin:auto;-webkit-transition: opacity 0.5s;transition: opacity 0.5s;}
+.logo-active {opacity: 0;background-image: url(https://og.kakaobank.io/view/ea26af28-2ecf-4378-a09c-33ad68097c10); background-size: 116px 20px;}
+.logo-default {opacity: 1;background-image: url(https://og.kakaobank.io/view/83d5f69f-6bda-417b-8fc8-112930858187); background-size: 116px 20px;}
+.nav-active .logo-active, .is-scrolled .logo-active {opacity: 1}
+.nav-active .logo-default, .is-scrolled .logo-default {opacity: 0}
+.nav-items {width:1080px;height: 100%; display: block;font-size: 0;text-align: right;margin:auto;}
+.nav-item {height: 80px;min-width:80px;box-sizing: border-box;display: inline-block;margin: 0 10px;text-align: center;-webkit-transition: border-color 0.5s;transition: border-color 0.5s;padding:0 10px;}
+.nav-item.nav-item-btn {line-height: 80px;vertical-align: top;border: none !important;}
+#kakaoHead .nav-item-btn a.btn-link {display: inline-block;padding: 0px 20px;background: #fede22;line-height: 44px;font-size: 14px;border-radius: 22px;vertical-align: middle;border: 1px solid #fede22;}
+.nav-item:hover,.nav-item.is-active {border-bottom: 2px solid; border-color:black;}
+.nav-item.has-border {border-bottom: 2px solid #fff;}
+.nav-active .nav-item.has-border {border-bottom: 2px solid #000;}
+.nav-content {border-bottom: 1px solid rgba(0,0,0,0.1);-webkit-transition: border 0.5s;transition: border 0.5s;}
+.nav-subs {display:none;width: 100%;position: absolute;left:0;right:0;top: auto; bottom: 100%;padding: 60px 0 36px;background:#ffffff;}
+.nav-item.is-active .nav-subs {top: 100%;bottom: auto;display:block;}
+.nav-sub {display: table;width: 1080px;margin: auto;}
+.nav-sub-item {display: table-cell;text-align: center;width:16%;}
+.nav-sub-title {display:inline-block;font-size: 17px;margin-bottom: 20px;}
+.nav-links {font-size: 13px;}
+.nav-link {margin-bottom: 24px;}
+.nav-link a {color: #444;}
+#kakaoHead .nav-link a.is-active {padding-bottom:2px; border-bottom: 2px solid rgba(0,0,0,0.5)}
+.nav-title {display:inline-block;box-sizing: border-box; padding:0 4px; font-size: 15px;float: none;line-height: 80px;color: #fff;-webkit-transition: color 0.5s;transition: color 0.5s;}
+.is-scrolled .nav-item.has-border {border-bottom: 2px solid #000;}
+
+.is-inverse .logo-default {background-image: url(https://og.kakaobank.io/view/ea26af28-2ecf-4378-a09c-33ad68097c10); background-size: 116px 20px;}
+.is-inverse .nav-title {color: #000;}
+.is-inverse .nav-item.has-border {border-bottom: 2px solid #000;}
+
+
+
+	.nav-ico {
+		display: inline-block;
+		height: 80px;
+		line-height: 20px;
+		vertical-align: middle;
+		float: right;
+		position: relative;
+		width:60px;
+	}
+	.nav-ico:hover {
+		opacity: 0.4;
+	}
+	.nav-ico .link-globe {
+	    width: 20px;
+		height: 20px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin:auto;
+	}
+	.img-globe,.img-kor {
+		display: block;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	.img-globe--w {
+		background: url(https://og.kakaobank.io/view/e84b7f93-5be4-420e-86cf-4f313695e2a1);
+		background-size: 20px 20px;
+		-webkit-transition: opacity 0.5s;
+		transition: opacity 0.5s;
+		opacity: 1;
+	}
+	.img-globe--b {
+		background: url(https://og.kakaobank.io/view/9432553a-742c-41b0-b808-4c46652cd81f);
+		background-size: 20px 20px;
+		-webkit-transition: opacity 0.5s;
+		transition: opacity 0.5s;
+		opacity: 0;
+	}
+	.img-kor--w {
+		background: url(https://og.kakaobank.io/view/0d218b65-7a63-4d32-88b7-80a30c065ec8);
+		background-size: 20px 20px;
+		-webkit-transition: opacity 0.5s;
+		transition: opacity 0.5s;
+		opacity: 1;
+	}
+	.img-kor--b {
+		background: url(https://og.kakaobank.io/view/be13bc96-c6a2-446b-87b5-439866edf28f);
+		background-size: 20px 20px;
+		-webkit-transition: opacity 0.5s;
+		transition: opacity 0.5s;
+		opacity: 0;
+	}
+	.nav-active .img-globe--b, .is-scrolled .img-globe--b, .is-inverse .img-globe--b,
+	.nav-active .img-kor--b, .is-scrolled .img-kor--b, .is-inverse .img-kor--b {opacity: 1;}
+	.nav-active .img-globe--w, .is-scrolled .img-globe--w, .is-inverse .img-globe--w,
+	.nav-active .img-kor--w, .is-scrolled .img-kor--w, .is-inverse .img-kor--w {opacity: 0;}
