@@ -20,14 +20,17 @@
             font-size: 15px;
         }
 
-        li {
-            padding-top: 20px;
+        .content_wrapper {
+            min-height: 0%;
+        }
+
+        .btn-sign {
+
         }
     </style>
 </head>
 <body>
 <%@ include file="../layout/navbar.jsp" %>
-
 
 <%-- 헤더 시작 --%>
 <div class="head_product">
@@ -76,7 +79,7 @@
 <%-- 헤더 끝 --%>
 
 
-<%-- 상품 소개 시작 --%>
+<%-- 상품 소개1 시작 --%>
 <div class="cont_product">
     <h2 class="screen_out">상품 소개</h2>
     <div class="intro_product deposit_product_1">
@@ -100,117 +103,59 @@
                 </div>
             </div>
         </div>
-        <span class="phone_cash interest_num">650.<span class="num_gray">35</span><span
-                class="txt_won">원</span></span>
-    </div>
-</div>
 
+        <div style="background-color: #ffb6c1">
+            <div class="content_wrapper">
+                <h3>
+                    갓생 챌린지를 통해 <br> 저축과 생활 습관을 한번에
+                </h3>
+                <p>
+                    갓생 챌린지와 연계된 예금 상품으로 갓생 챌린지와<br>
+                    연동해야만 가입할 수 있습니다.<br>
+                    본인의 원하는 챌린지와 예금 상품의 금액, 기간을 설정하여<br>
+                    예금을 운용해보세요.
+                </p>
 
-</div>
-</div>
-<div class="intro_product intro_product_right deposit_product_2">
-    <div class="content_wrapper">
-        <h3>1개월 만기도 가능한 예금</h3>
-        <p>
-            아주 짧은 기간이라도 정기예금을 활용하면 효율적입니다. <br> 최소 1개월부터 최대 36개월까지, 내가 원하는 만기날짜를 <br> 선택하여 가입할 수 있습니다.
-        </p>
-        <div class="deposit_visual2" data-sr-id="2"
-             style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
-            <div class="img_deposit img_phone">
-                <span class="tit_info"><span>12</span>개월 만기</span>
-                <div class="bg_progress">
-                                <span class="bar_progress_max" style="display:block;width:79px">
-                                    <span class="bar_progress" style="width: 100%;">
-                                        <span class="img_deposit img_circle"></span>
-                                    </span>
-                                </span>
-                </div>
-                <span class="img_deposit img_load" style="transform: rotate(360deg); display: none;"></span>
-                <span class="forcast_txt">(세전)123,456원</span>
-                <span class="click_forecast" style="opacity: 0;"></span>
-                <span class="hide_forecast" style="display: none;"></span>
-            </div>
-            <div class="bg_gradient"></div>
-        </div>
-    </div>
-</div>
-<div class="intro_product deposit_product_3">
-    <div class="content_wrapper">
-        <h3>
-            째깍째깍, <br> 눈에 보이는 이자
-        </h3>
-        <p>
-            예금 가입 직후부터 이자가 쌓이기 시작합니다. <br>
-            만기 때 받을 수 있는 이자가 얼마나 쌓이고 있는지 <br>
-            눈으로 볼 수 있습니다. <br>
-            (단, 중도해지 시 이자 지급액은 달라질 수 있습니다.)
-        </p>
-        <div class="deposit_visual3" data-sr-id="3"
-             style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
-            <div class="phone_group">
-                <div class="img_deposit img_phone"></div>
-                <div class="line_interest">
-                    <div class="line_interest_max">
-                        <div class="bg_bar">
-                            <div class="bar_item">
-                                <span class="txt_interest">예상이자</span>
-                                <span class="num_cash interest_num">650.<span class="num_gray">35</span><span
-                                        class="txt_won">원</span></span>
-                            </div>
-                        </div>
+                <div class="deposit_visual3" data-sr-id="3"
+                     style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+                    <div class="phone_group">
+                        <%--                    <div class="img_deposit img_phone"></div>--%>
+                        <img src="/assets/images/hana/deposit_img_1.png" style="margin-left: 200px; margin-top: 50px">
+
                     </div>
                 </div>
-                <span class="phone_cash interest_num">650.<span class="num_gray">35</span><span
-                        class="txt_won">원</span></span>
             </div>
         </div>
-    </div>
-</div>
-<div class="intro_product intro_product_right deposit_product_4">
-    <div class="content_wrapper">
-        <h3>
-            급할 땐 해지없이 <br> 긴급출금
-        </h3>
-        <p>
-            급하게 돈이 필요한 경우 때문에 예금 가입을 망설일 필요 없습니다. <br>
-            예금을 해지하지 않고도, 필요한 금액만 최대 2회까지 출금 가능합니다. <br>
-            (긴급출금 금액은 중도해지 금리로 이자가 지급됩니다.)
-        </p>
-        <div class="deposit_visual4" data-sr-id="4"
-             style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
-            <div class="img_deposit img_phone">
-                <span class="txt_cash">출금신청금액</span>
-                <span class="num_cash"><span class="txt_cash_type">500,000</span> 원</span>
-                <span class="img_dimmed img_dimmed1" style="display: none;"></span>
-                <span class="img_dimmed img_dimmed2" style="display: none;"></span>
+
+
+        <div style="background-color: #e1ffff">
+            <div class="content_wrapper">
+                <h3>
+                    갓생 챌린지를 통해 <br> 저축과 생활 습관을 한번에
+                </h3>
+                <p>
+                    갓생 챌린지와 연계된 예금 상품으로 갓생 챌린지와<br>
+                    연동해야만 가입할 수 있습니다.<br>
+                    본인의 원하는 챌린지와 예금 상품의 금액, 기간을 설정하여<br>
+                    예금을 운용해보세요.
+                </p>
+
+                <div class="deposit_visual3" data-sr-id="3"
+                     style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.1s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
+                    <div class="phone_group">
+                        <%--                    <div class="img_deposit img_phone"></div>--%>
+                        <img src="/assets/images/hana/deposit_img_1.png" style="margin-left: 200px; margin-top: 50px">
+
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 </div>
-<div class="intro_product deposit_product_5">
-    <div class="content_wrapper">
-        <h3>
-            만기 자동연장은 <br> 5회까지
-        </h3>
-        <p>
-            재테크 고수라면 예금 만기 시 바로 다시 새로운 예금으로 <br>
-            목돈을 관리해보세요. (만기 자동연장 시 원금과 이자가 <br>
-            새로운 예금으로 자동으로 재예치되며, 금리는 자동연장 시점에 <br>
-            고시된 이 상품의 금리가 적용됩니다.)
-        </p>
-        <div class="deposit_visual5" data-sr-id="5"
-             style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; ">
-            <div class="circle_wrapper">
-                <span class="img_deposit img_circle"></span>
-                <span class="num_txt num_txt1">1</span>
-                <span class="num_txt num_txt2">2</span>
-                <span class="num_txt num_txt3">3</span>
-                <span class="num_txt num_txt4">4</span>
-                <span class="num_txt num_txt5">5</span>
-            </div>
-        </div>
-    </div>
-</div>
+<%-- 상품 소개1 끝 --%>
+
+
 <div class="intro_detail">
     <div class="content_wrapper">
         <h2 class="screen_out">상품 상세정보</h2>
@@ -246,14 +191,14 @@
                     </p>
                 </div>
             </div>
-            <div class="board_item on">
+            <div class="board_item">
                 <h3 class="info_tit">
                     <a href="javascript:;" class="link_tit" title="상세내용 닫기">
                         <span class="tit_board">금리정보</span>
                         <span class="img_kakaobank img_arr"></span>
                     </a>
                 </h3>
-                <div class="info_cont" style="">
+                <div class="info_cont" style="display: none;">
                     <strong>기본금리</strong>
                     <p>(2023.09.10기준, 세금공제 전)</p>
                     <table>
@@ -514,6 +459,9 @@
                 <h3 class="info_tit">
                     <a href="javascript:;" class="link_tit" title="상세내용 보기" data-product-group-id="9">
                         <span class="tit_board">상품설명서 및 이용약관</span>
+                        <!-- 추후 내 파일로 교체 -->
+                        <span class="img_kakaobank img_arr"></span>
+                        <!-- 메일로 받기 부분도 추가 -->
                         <span class="img_kakaobank img_arr"></span>
                     </a>
                 </h3>
@@ -527,98 +475,125 @@
         </div>
         <!--// 안내 펼침목록-->
         <!--추천-->
-        <div class="recomm_product">
-            <h2 class="tit_recomm">
-                카카오뱅크의 다른 추천
-            </h2>
-            <ul class="list_recomm">
+        <%--        <div class="recomm_product">--%>
+        <%--            <h2 class="tit_recomm">--%>
+        <%--                하나빗의 다른 추천--%>
+        <%--            </h2>--%>
+        <%--            <ul class="list_recomm">--%>
 
-                <li>
-                    <a href="https://www.kakaobank.com/products/withdrawal" class="link_recomm link_type1">
-                        입출금통장
-                        <span class="img_kakaobank ico_account"></span>
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="https://www.kakaobank.com/products/moim" class="link_recomm link_type1">
-                        모임통장
-                        <span class="img_kakaobank ico_moim"></span>
-                    </a>
-                </li>
+        <%--                <li>--%>
+        <%--                    <a href="https://www.kakaobank.com/products/withdrawal" class="link_recomm link_type1">--%>
+        <%--                        입출금통장--%>
+        <%--                        <span class="img_kakaobank ico_account"></span>--%>
+        <%--                    </a>--%>
+        <%--                </li>--%>
 
 
-                <li>
-                    <a href="https://www.kakaobank.com/products/safeboxes" class="link_recomm link_type1">
-                        세이프박스
-                        <span class="img_kakaobank ico_safeboxes"></span>
-                    </a>
-                </li>
+        <%--                <li>--%>
+        <%--                    <a href="https://www.kakaobank.com/products/moim" class="link_recomm link_type1">--%>
+        <%--                        모임통장--%>
+        <%--                        <span class="img_kakaobank ico_moim"></span>--%>
+        <%--                    </a>--%>
+        <%--                </li>--%>
 
 
-                <li>
-                    <a href="https://www.kakaobank.com/products/savings" class="link_recomm link_type1">
-                        자유적금
-                        <span class="img_kakaobank ico_savings"></span>
-                    </a>
-                </li>
+        <%--                <li>--%>
+        <%--                    <a href="https://www.kakaobank.com/products/safeboxes" class="link_recomm link_type1">--%>
+        <%--                        세이프박스--%>
+        <%--                        <span class="img_kakaobank ico_safeboxes"></span>--%>
+        <%--                    </a>--%>
+        <%--                </li>--%>
 
 
-                <li>
-                    <a href="https://www.kakaobank.com/products/26weeks" class="link_recomm link_type1">
-                        26주적금
-                        <span class="img_kakaobank ico_26weeks"></span>
-                    </a>
-                </li>
+        <%--                <li>--%>
+        <%--                    <a href="https://www.kakaobank.com/products/savings" class="link_recomm link_type1">--%>
+        <%--                        자유적금--%>
+        <%--                        <span class="img_kakaobank ico_savings"></span>--%>
+        <%--                    </a>--%>
+        <%--                </li>--%>
 
 
-                <li>
-                    <a href="https://www.kakaobank.com/products/emergencyLoan" class="link_recomm link_type2">
-                        비상금대출
-                        <span class="img_kakaobank ico_loan"></span>
-                    </a>
-                </li>
+        <%--                <li>--%>
+        <%--                    <a href="https://www.kakaobank.com/products/26weeks" class="link_recomm link_type1">--%>
+        <%--                        26주적금--%>
+        <%--                        <span class="img_kakaobank ico_26weeks"></span>--%>
+        <%--                    </a>--%>
+        <%--                </li>--%>
 
 
-                <li>
-                    <a href="https://www.kakaobank.com/products/creditLine" class="link_recomm link_type2">
-                        마이너스 통장대출
-                        <span class="img_kakaobank ico_negative"></span>
-                    </a>
-                </li>
+        <%--                <li>--%>
+        <%--                    <a href="https://www.kakaobank.com/products/emergencyLoan" class="link_recomm link_type2">--%>
+        <%--                        비상금대출--%>
+        <%--                        <span class="img_kakaobank ico_loan"></span>--%>
+        <%--                    </a>--%>
+        <%--                </li>--%>
 
 
-                <li>
-                    <a href="https://www.kakaobank.com/products/creditLoan" class="link_recomm link_type2">
-                        신용대출
-                        <span class="img_kakaobank ico_credit"></span>
-                    </a>
-                </li>
+        <%--                <li>--%>
+        <%--                    <a href="https://www.kakaobank.com/products/creditLine" class="link_recomm link_type2">--%>
+        <%--                        마이너스 통장대출--%>
+        <%--                        <span class="img_kakaobank ico_negative"></span>--%>
+        <%--                    </a>--%>
+        <%--                </li>--%>
 
 
-                <li>
-                    <a href="https://www.kakaobank.com/products/leaseLoan" class="link_recomm link_type2">
-                        전월세보증금대출
-                        <span class="img_kakaobank ico_house"></span>
-                    </a>
-                </li>
+        <%--                <li>--%>
+        <%--                    <a href="https://www.kakaobank.com/products/creditLoan" class="link_recomm link_type2">--%>
+        <%--                        신용대출--%>
+        <%--                        <span class="img_kakaobank ico_credit"></span>--%>
+        <%--                    </a>--%>
+        <%--                </li>--%>
 
-            </ul>
-        </div>
-        <!--// 추천-->
-        <!--공유하기-->
-        <div class="share_product">
-            <div class="review_txt">준법감시인 심의필 23-0912 (2023.07.04.~2024.07.03.)</div>
-        </div>
-        <!--// 공유하기-->
+
+        <%--                <li>--%>
+        <%--                    <a href="https://www.kakaobank.com/products/leaseLoan" class="link_recomm link_type2">--%>
+        <%--                        전월세보증금대출--%>
+        <%--                        <span class="img_kakaobank ico_house"></span>--%>
+        <%--                    </a>--%>
+        <%--                </li>--%>
+
+        <%--            </ul>--%>
+        <%--        </div>--%>
+
     </div>
-</div>
 </div>
 <%-- 상품 소개 끝 --%>
 
 
-<%--<script src="/assets/js/product/pc.js"></script>--%>
+<!-- 가입하기 버튼 -->
+<div style="background-color: #ffffff">
+    <div class="content_wrapper" style="padding-left: 500px; padding-bottom: 100px;">
+        <button style="padding: 10px 30px;" class="btn-primary btn-sign" type="button"
+                onclick="location.href='joinUs.jsp' ">가입하기
+        </button>
+    </div>
+</div>
+
+
+<script>
+    // JavaScript로 펼치기/닫히기 기능 구현
+    document.addEventListener('DOMContentLoaded', function () {
+        var boardItems = document.querySelectorAll('.board_item');
+
+        boardItems.forEach(function (item) {
+            var infoTit = item.querySelector('.info_tit');
+
+            infoTit.addEventListener('click', function () {
+                item.classList.toggle('on');
+
+                var infoCont = item.querySelector('.info_cont');
+                if (item.classList.contains('on')) {
+                    infoCont.style.display = 'block';
+                } else {
+                    infoCont.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+
+
+<script src="/assets/js/product/pc.js"></script>
 <%@ include file="../layout/footer.jsp" %>
 </body>
 </html>
