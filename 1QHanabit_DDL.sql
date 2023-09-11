@@ -18,7 +18,7 @@ REM  ***************************************************************************
 --  챌린지 예금 상품(TB_CHALLENGE_PRODUCTS) 정보 관리
 --------------------------------------------------------------------------------
 
-CREATE TABLE "TB_CHALLENGE_PRODUCTS"
+CREATE TABLE "TB_CHALLENGE_DEPOSIT_PRODUCTS"
 (
     "ID"                         NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     "THUMBNAIL_IMG"              VARCHAR2(500) NULL,
@@ -40,7 +40,7 @@ CREATE TABLE "TB_CHALLENGE_PRODUCTS"
 --  챌린지 예금 상품 후기(TB_CHALLENGE_PRODUCT_REVIEWS) 정보 관리
 --------------------------------------------------------------------------------
 
-CREATE TABLE "TB_CHALLENGE_PRODUCT_REVIEWS"
+CREATE TABLE "TB_CHALLENGE_DEPOSIT_PRODUCT_REVIEWS"
 (
     "ID"                   NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     "CONTENT"              VARCHAR2(500)        NOT NULL,
@@ -49,8 +49,8 @@ CREATE TABLE "TB_CHALLENGE_PRODUCT_REVIEWS"
     "MODIFIED_AT"          DATE DEFAULT SYSDATE NOT NULL,
     "WRITER"               VARCHAR2(100)        NOT NULL,
     "CHALLENGE_PRODUCT_ID" NUMBER               NOT NULL,
-    constraints            "FK_CHALLENGE_PRODUCT_ID" foregin key (CHALLENGE_PRODUCT_ID)
-        reference TB_CHALLENGE_PRODUCTS(ID)
+    constraints            "FK_CHALLENGE_PRODUCT_ID" foreign key (CHALLENGE_PRODUCT_ID)
+        references TB_CHALLENGE_DEPOSIT_PRODUCTS(ID)
 );
 
 
