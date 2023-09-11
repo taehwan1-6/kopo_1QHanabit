@@ -29,15 +29,7 @@ public class SavingProductController {
         return "product/saving";
     }
 
-    @GetMapping("deposit")
-    public String depositDetails() {
-        return "product/deposit";
-    }
 
-    @GetMapping("deposit-tos")
-    public String depositTos() {
-        return "product/deposit-tos";
-    }
 /*
 ===================== 아래 일단 대기 =========================
  */
@@ -66,10 +58,10 @@ public class SavingProductController {
         return "product/product-details";
     }
 
-    @GetMapping("/product-mydata")
-    public String productMydata() {
-        return "product/product-mydata";
-    }
+//    @GetMapping("/product-mydata")
+//    public String productMydata() {
+//        return "product/product-mydata";
+//    }
 
 //    @GetMapping("/product/list")
 //    @ResponseBody

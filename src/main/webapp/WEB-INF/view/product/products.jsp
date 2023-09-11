@@ -74,7 +74,7 @@
                                     <tr>
                                         <td>
                                             <img src="${ productVO.imgPath }" alt="contact-img" title="contact-img"
-                                                 class="rounded me-3" height="48"/>
+                                                 class="rounded me-3" style="height: 35%"/>
                                             <p class="m-0 d-inline-block align-middle font-16">
                                                 <a href="/product/product-details/${productVO.id}"
                                                    class="text-body">${ productVO.name }</a>

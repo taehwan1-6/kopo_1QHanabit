@@ -11,4 +11,19 @@ public class JspHelloController {
         return "index";
     }
 
+    @GetMapping("product/deposit")
+    public String depositDetails() {
+        return "product/deposit";
+    }
+
+    @GetMapping("product/deposit-tos")
+    public String depositTos() {
+        return "product/deposit-tos";
+    }
+
+    @GetMapping("challenge/challenges")
+    public String challengeList() {
+        return "challenge/challenges";
+    }
+
 }

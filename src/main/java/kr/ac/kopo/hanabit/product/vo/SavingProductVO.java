@@ -20,4 +20,5 @@ public class SavingProductVO {
     private String imgName;
     private String imgPath;
     private String createdAt;
+    private String modifiedAt;
 }
