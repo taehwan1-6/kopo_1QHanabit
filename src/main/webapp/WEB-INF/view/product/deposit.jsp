@@ -564,7 +564,7 @@
 <div style="background-color: #ffffff">
     <div class="content_wrapper" style="padding-left: 500px; padding-bottom: 100px;">
         <button style="padding: 10px 30px;" class="btn-primary btn-sign" type="button"
-                onclick="location.href='joinUs.jsp' ">가입하기
+                onclick="location.href='deposit-tos'">가입하기
         </button>
     </div>
 </div>

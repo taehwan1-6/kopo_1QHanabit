@@ -33,6 +33,11 @@ public class SavingProductController {
     public String depositDetails() {
         return "product/deposit";
     }
+
+    @GetMapping("deposit-tos")
+    public String depositTos() {
+        return "product/deposit-tos";
+    }
 /*
 ===================== 아래 일단 대기 =========================
  */
