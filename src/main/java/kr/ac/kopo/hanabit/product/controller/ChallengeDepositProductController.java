@@ -60,4 +60,15 @@ public class ChallengeDepositProductController {
 
         return "product/challengedeposit/challenge-deposit-tos";
     }
+
+    @GetMapping("/{id}/add")
+    public String addForm(@PathVariable("id") Long id, Model model) {
+        ChallengeDepositProductVO productVO = productService.getOneById(id);
+
+        model.addAttribute("productVO", productVO);
+
+        log.info(String.valueOf(productVO));
+
+        return "product/challengedeposit/challenge-deposit-add-form";
+    }
 }
