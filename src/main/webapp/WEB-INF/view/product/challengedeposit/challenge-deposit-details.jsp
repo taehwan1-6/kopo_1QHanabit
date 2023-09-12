@@ -53,7 +53,7 @@
                             </h3>
                             <div class="badge bg-primary text-light mb-3">진행중</div>
 
-                            <p class="mb-3">
+                            <p class="mb-4">
                                     <span class="pe-2 text-nowrap">
                                         <i class="uil uil-calendar-alt"></i>
                                         <b>${productVO.period}</b> 개월
@@ -75,42 +75,58 @@
 
                             <h5>상품 설명:</h5>
 
-                            <p class="text-muted mb-2">
+                            <p class="text-muted mb-4">
                                 ${productVO.description}
                             </p>
 
-                            <p class="text-muted mb-4">
-                                Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique?
-                                Tempore, quos delectus asperiores
-                                libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit
-                                amet.
-                                With supporting text below
-                                as a natural lead-in to additional contenposuere erat a ante.
-                            </p>
+                            <%--                            <p class="text-muted mb-4">--%>
+                            <%--                                Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique?--%>
+                            <%--                                Tempore, quos delectus asperiores--%>
+                            <%--                                libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit--%>
+                            <%--                                amet.--%>
+                            <%--                                With supporting text below--%>
+                            <%--                                as a natural lead-in to additional contenposuere erat a ante.--%>
+                            <%--                            </p>--%>
 
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="mb-4">
-                                        <h5>Start Date</h5>
-                                        <p>17 March 2018 <small class="text-muted">1:00 PM</small></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-4">
-                                        <h5>End Date</h5>
-                                        <p>22 December 2018 <small class="text-muted">1:00 PM</small></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mb-4">
-                                        <h5>Budget</h5>
-                                        <p>$15,800</p>
-                                    </div>
-                                </div>
+                            <%--                            <div class="row">--%>
+                            <%--                                <div class="col-md-4">--%>
+                            <%--                                    <div class="mb-4">--%>
+                            <%--                                        <h5>상품 모집 기간</h5>--%>
+                            <%--                                        <p>17 March 2018 <small class="text-muted">1:00 PM</small></p>--%>
+                            <%--                                    </div>--%>
+                            <%--                                </div>--%>
+                            <%--                                <div class="col-md-4">--%>
+                            <%--                                    <div class="mb-4">--%>
+                            <%--                                        <h5>End Date</h5>--%>
+                            <%--                                        <p>22 December 2018 <small class="text-muted">1:00 PM</small></p>--%>
+                            <%--                                    </div>--%>
+                            <%--                                </div>--%>
+                            <%--                                <div class="col-md-4">--%>
+                            <%--                                    <div class="mb-4">--%>
+                            <%--                                        <h5>Budget</h5>--%>
+                            <%--                                        <p>$15,800</p>--%>
+                            <%--                                    </div>--%>
+                            <%--                                </div>--%>
+                            <%--                            </div>--%>
+
+
+                            <!-- 인증 방법 설명 시작 -->
+                            <div style="margin-bottom: 8%">
+                                <h5>인증 방법:</h5>
+
+                                <p class="text-muted mb-2">
+                                    ${productVO.authenticationDescription}
+                                </p>
+                                <img src="${productVO.authenticationImg1}" alt="image" style="width: 30%; margin: 1%">
+                                <img src="${productVO.authenticationImg2}" alt="image" style="width: 30%; margin: 1%">
+                                <img src="${productVO.authenticationImg3}" alt="image" style="width: 30%; margin: 1%">
                             </div>
+                            <!-- 인증 방법 설명 끝 -->
 
-                            <div id="tooltip-container">
-                                <h5>Team Members:</h5>
+
+                            <!-- 현재 가입자 프로필 사진 시작 -->
+                            <div id="tooltip-container" style="margin-bottom: 8%">
+                                <h5>현재 가입자:</h5>
                                 <a href="javascript:void(0);" data-bs-container="#tooltip-container"
                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme"
                                    class="d-inline-block">
@@ -153,11 +169,22 @@
                                          class="rounded-circle img-thumbnail avatar-sm" alt="friend">
                                 </a>
                             </div>
+                            <!-- 현재 가입자 프로필 사진 시작 -->
+
+                            <div class="text-end">
+                                <div class="btn-group mb-2 ms-2">
+                                    <button type="button" class="btn btn-primary btn-sm"
+                                            onclick="location.href='${productVO.id}/tos'">가입하기
+                                    </button>
+                                </div>
+                            </div>
+
 
                         </div> <!-- end card-body-->
 
                     </div> <!-- end card-->
 
+                    <!-- 후기 댓글 시작 -->
                     <div class="card">
                         <div class="card-body">
                             <h4 class="mt-0 mb-3">Comments (258)</h4>

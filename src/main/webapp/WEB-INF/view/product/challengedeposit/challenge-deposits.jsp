@@ -410,7 +410,7 @@
                             <div class="card-body position-relative">
                                 <!-- project title-->
                                 <h4 class="mt-0">
-                                    <a href="/product/challenge-deposit-details/${productVO.id}"
+                                    <a href="/product/challenge-deposits/${productVO.id}"
                                        class="text-title">${productVO.name}</a>
                                 </h4>
 

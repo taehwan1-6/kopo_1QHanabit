@@ -18,6 +18,8 @@ public class ChallengeDepositProductVO {
     private int minPayment;
     private int maxPayment;
     private String authenticationDescription;
-    private String authenticationImg;
+    private String authenticationImg1;
+    private String authenticationImg2;
+    private String authenticationImg3;
 
 }

@@ -14,6 +14,10 @@ REM  ***************************************************************************
 --  1QHanabit Main 서버
 --------------------------------------------------------------------------------
 
+
+
+
+
 --------------------------------------------------------------------------------
 --  챌린지 예금 상품(TB_CHALLENGE_PRODUCTS) 정보 관리
 --------------------------------------------------------------------------------
@@ -37,6 +41,19 @@ CREATE TABLE "TB_CHALLENGE_DEPOSIT_PRODUCTS"
     "CREATED_AT"         DATE DEFAULT SYSDATE NOT NULL,
     "MODIFIED_AT"         DATE DEFAULT SYSDATE NOT NULL
 );
+
+alter table TB_CHALLENGE_DEPOSIT_PRODUCTS rename column AUTHENTICATION_IMG to AUTHENTICATION_IMG_1
+/
+
+alter table TB_CHALLENGE_DEPOSIT_PRODUCTS
+    add AUTHENTICATION_IMG_2 VARCHAR2(500)
+/
+
+alter table TB_CHALLENGE_DEPOSIT_PRODUCTS
+    add AUTHENTICATION_IMG_3 VARCHAR2(500)
+/
+
+
 
 INSERT INTO ADMIN.TB_CHALLENGE_DEPOSIT_PRODUCTS (ID, THUMBNAIL_IMG, NAME, DESCRIPTION, NUMBER_SUBSCRIBERS, LIMITED_SUBSCRIBERS, PERIOD, AUTHENTICATION_FREQUENCY, BASE_RATE, PREFER_RATE, MIN_PAYMENT, MAX_PAYMENT, AUTHENTICATION_DESCRIPTION, AUTHENTICATION_IMG) VALUES (8, null, '1만보 걷기 챌린지 예금', '1만보 이상 걷고 건강 챙기고 우대금리까지 챙기세요!', null, null, 3, 3, 2.2, 4.2, 100000, 3000000, '~ 이런식으로 사진찍어서 인증하면 됩니다.', null);
 INSERT INTO ADMIN.TB_CHALLENGE_DEPOSIT_PRODUCTS (ID, THUMBNAIL_IMG, NAME, DESCRIPTION, NUMBER_SUBSCRIBERS, LIMITED_SUBSCRIBERS, PERIOD, AUTHENTICATION_FREQUENCY, BASE_RATE, PREFER_RATE, MIN_PAYMENT, MAX_PAYMENT, AUTHENTICATION_DESCRIPTION, AUTHENTICATION_IMG) VALUES (7, null, '할일 3가지 쓰기', 'To-do를 쓰고 삶의 주도권과 함께 우대금리를 받아보세요.', null, null, 1, 7, 4.5, 6.5, 100000, 3000000, '~ 이런식으로 사진찍어서 인증하면 됩니다.', null);
@@ -62,7 +79,7 @@ CREATE TABLE "TB_CHALLENGE_DEPOSIT_PRODUCT_REVIEWS"
 (
     "ID"                   NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     "CONTENT"              VARCHAR2(500)        NOT NULL,
-    "RATING"               VARCHAR2(100)        NOT NULL,
+    "RATING"               number        NOT NULL,
     "CREATED_AT"           DATE DEFAULT SYSDATE NOT NULL,
     "MODIFIED_AT"          DATE DEFAULT SYSDATE NOT NULL,
     "WRITER"               VARCHAR2(100)        NOT NULL,
@@ -70,6 +87,12 @@ CREATE TABLE "TB_CHALLENGE_DEPOSIT_PRODUCT_REVIEWS"
     constraints            "FK_CHALLENGE_PRODUCT_ID" foreign key (CHALLENGE_PRODUCT_ID)
         references TB_CHALLENGE_DEPOSIT_PRODUCTS(ID)
 );
+
+alter table TB_CHALLENGE_DEPOSIT_PRODUCT_REVIEWS
+    modify RATING number
+/
+
+
 
 
 

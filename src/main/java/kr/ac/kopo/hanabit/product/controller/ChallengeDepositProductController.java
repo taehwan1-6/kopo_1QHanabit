@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller()
-@RequestMapping("/product")
+@RequestMapping("/product/challenge-deposits")
 @Slf4j
 public class ChallengeDepositProductController {
 
@@ -24,8 +24,8 @@ public class ChallengeDepositProductController {
         this.productService = productService;
     }
 
-    @GetMapping("/challenge-deposits")
-    public String getAll(Model model) {
+    @GetMapping
+    public String products(Model model) {
         List<ChallengeDepositProductVO> productVOList = productService.getAll();
 
         model.addAttribute("productVOList", productVOList);
@@ -39,8 +39,8 @@ public class ChallengeDepositProductController {
         return "product/challengedeposit/challenge-deposits";
     }
 
-    @GetMapping("/challenge-deposit-details/{id}")
-    public String getOne(@PathVariable("id") Long id, Model model) {
+    @GetMapping("/{id}")
+    public String product(@PathVariable("id") Long id, Model model) {
         ChallengeDepositProductVO productVO = productService.getOneById(id);
 
         model.addAttribute("productVO", productVO);
@@ -50,14 +50,14 @@ public class ChallengeDepositProductController {
         return "product/challengedeposit/challenge-deposit-details";
     }
 
-//    @GetMapping("/challenge-deposit-details")
-//    public String getOne(Model model) {
-////        ChallengeDepositProductVO productVO = productService.getOneById(id);
-////
-////        model.addAttribute("productVO", productVO);
-////
-////        log.info(String.valueOf(productVO));
-//
-//        return "product/challengedeposit/challenge-deposit-details";
-//    }
+    @GetMapping("/{id}/tos")
+    public String tos(@PathVariable("id") Long id, Model model) {
+        ChallengeDepositProductVO productVO = productService.getOneById(id);
+
+        model.addAttribute("productVO", productVO);
+
+        log.info(String.valueOf(productVO));
+
+        return "product/challengedeposit/challenge-deposit-tos";
+    }
 }
