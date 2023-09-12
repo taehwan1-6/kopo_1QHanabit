@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box">
-                        <h4 class="page-title">상품 정보</h4>
+                        <h2 class="page-title">상품 정보</h2>
                     </div>
                 </div>
             </div>
@@ -130,42 +130,42 @@
                                 <a href="javascript:void(0);" data-bs-container="#tooltip-container"
                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme"
                                    class="d-inline-block">
-                                    <img src="assets/images/users/avatar-6.jpg"
+                                    <img src="/assets/images/users/avatar-6.jpg"
                                          class="rounded-circle img-thumbnail avatar-sm" alt="friend">
                                 </a>
 
                                 <a href="javascript:void(0);" data-bs-container="#tooltip-container"
                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty"
                                    class="d-inline-block">
-                                    <img src="assets/images/users/avatar-7.jpg"
+                                    <img src="/assets/images/users/avatar-7.jpg"
                                          class="rounded-circle img-thumbnail avatar-sm" alt="friend">
                                 </a>
 
                                 <a href="javascript:void(0);" data-bs-container="#tooltip-container"
                                    data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson"
                                    class="d-inline-block">
-                                    <img src="assets/images/users/avatar-8.jpg"
+                                    <img src="/assets/images/users/avatar-8.jpg"
                                          class="rounded-circle img-thumbnail avatar-sm" alt="friend">
                                 </a>
 
                                 <a href="javascript:void(0);" data-bs-container="#tooltip-container"
                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Mat Helme"
                                    class="d-inline-block">
-                                    <img src="assets/images/users/avatar-4.jpg"
+                                    <img src="/assets/images/users/avatar-4.jpg"
                                          class="rounded-circle img-thumbnail avatar-sm" alt="friend">
                                 </a>
 
                                 <a href="javascript:void(0);" data-bs-container="#tooltip-container"
                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Michael Zenaty"
                                    class="d-inline-block">
-                                    <img src="assets/images/users/avatar-5.jpg"
+                                    <img src="/assets/images/users/avatar-5.jpg"
                                          class="rounded-circle img-thumbnail avatar-sm" alt="friend">
                                 </a>
 
                                 <a href="javascript:void(0);" data-bs-container="#tooltip-container"
                                    data-bs-toggle="tooltip" data-bs-placement="top" title="James Anderson"
                                    class="d-inline-block">
-                                    <img src="assets/images/users/avatar-3.jpg"
+                                    <img src="/assets/images/users/avatar-3.jpg"
                                          class="rounded-circle img-thumbnail avatar-sm" alt="friend">
                                 </a>
                             </div>
@@ -202,7 +202,7 @@
                             </div>
 
                             <div class="d-flex align-items-start mt-2">
-                                <img class="me-3 avatar-sm rounded-circle" src="assets/images/users/avatar-3.jpg"
+                                <img class="me-3 avatar-sm rounded-circle" src="/assets/images/users/avatar-3.jpg"
                                      alt="Generic placeholder image">
                                 <div class="w-100 overflow-hidden">
                                     <h5 class="mt-0">Jeremy Tomlinson</h5>
@@ -215,7 +215,8 @@
 
                                     <div class="d-flex align-items-start mt-3">
                                         <a class="pe-3" href="#">
-                                            <img src="assets/images/users/avatar-4.jpg" class="avatar-sm rounded-circle"
+                                            <img src="/assets/images/users/avatar-4.jpg"
+                                                 class="avatar-sm rounded-circle"
                                                  alt="Generic placeholder image">
                                         </a>
                                         <div class="w-100 overflow-hidden">
@@ -289,7 +290,7 @@
                                 <div class="p-2">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
-                                            <img src="assets/images/projects/project-1.jpg" class="avatar-sm rounded"
+                                            <img src="/assets/images/projects/project-1.jpg" class="avatar-sm rounded"
                                                  alt="file-image"/>
                                         </div>
                                         <div class="col ps-0">
@@ -347,11 +348,11 @@
 
 
 <!-- third party js -->
-<script src="/assets/js/vendor/Chart.bundle.min.js"></script>
+<script src="//assets/js/vendor/Chart.bundle.min.js"></script>
 <!-- third party js ends -->
 
 <!-- demo app -->
-<script src="/assets/js/pages/demo.project-detail.js"></script>
+<script src="//assets/js/pages/demo.project-detail.js"></script>
 <!-- end demo js-->
 
 <%@ include file="/WEB-INF/view/layout/footer.jsp" %>

@@ -85,7 +85,7 @@
                     <a class="nav-link" href="/product/products">적금상품</a>
                 </li>
                 <li class="nav-item mx-lg-1">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/products">예금상품</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/product/challenge-deposits">예금상품</a>
                 </li>
                 <li class="nav-item mx-lg-1">
                     <a class="nav-link" href="${pageContext.request.contextPath}/my-consume">나의 소비내역</a>
