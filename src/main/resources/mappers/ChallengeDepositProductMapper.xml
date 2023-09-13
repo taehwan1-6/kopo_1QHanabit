@@ -2,16 +2,16 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="kr.ac.kopo.hanabit.product.dao.ChallengeDepositProductMapper">
+<mapper namespace="kr.ac.kopo.hanabit.product.v1.dao.ChallengeDepositProductMapper">
 
-    <select id="selectAll" resultType="kr.ac.kopo.hanabit.product.vo.ChallengeDepositProductVO">
+    <select id="selectAll" resultType="kr.ac.kopo.hanabit.product.v1.vo.ChallengeDepositProductVO">
         select *
         from TB_CHALLENGE_DEPOSIT_PRODUCTS
         order by id desc
     </select>
 
     <select id="selectOneById" parameterType="Long"
-            resultType="kr.ac.kopo.hanabit.product.vo.ChallengeDepositProductVO">
+            resultType="kr.ac.kopo.hanabit.product.v1.vo.ChallengeDepositProductVO">
         select *
         from TB_CHALLENGE_DEPOSIT_PRODUCTS
         where id = #{id}

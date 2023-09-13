@@ -1,7 +1,7 @@
-package kr.ac.kopo.hanabit.product.controller;
+package kr.ac.kopo.hanabit.product.v1.controller;
 
-import kr.ac.kopo.hanabit.product.service.SavingProductService;
-import kr.ac.kopo.hanabit.product.vo.SavingProductVO;
+import kr.ac.kopo.hanabit.product.v1.service.SavingProductService;
+import kr.ac.kopo.hanabit.product.v1.vo.SavingProductVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

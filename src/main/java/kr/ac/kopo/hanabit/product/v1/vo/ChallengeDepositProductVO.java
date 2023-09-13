@@ -1,4 +1,4 @@
-package kr.ac.kopo.hanabit.product.vo;
+package kr.ac.kopo.hanabit.product.v1.vo;
 
 import lombok.Getter;
 

@@ -1,7 +1,7 @@
-package kr.ac.kopo.hanabit.product.service;
+package kr.ac.kopo.hanabit.product.v1.service;
 
-import kr.ac.kopo.hanabit.product.dao.ChallengeDepositProductMapper;
-import kr.ac.kopo.hanabit.product.vo.ChallengeDepositProductVO;
+import kr.ac.kopo.hanabit.product.v1.dao.ChallengeDepositProductMapper;
+import kr.ac.kopo.hanabit.product.v1.vo.ChallengeDepositProductVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

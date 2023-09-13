@@ -2,14 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="kr.ac.kopo.hanabit.product.dao.SavingProductMapper">
+<mapper namespace="kr.ac.kopo.hanabit.product.v1.dao.SavingProductMapper">
 
-    <select id="selectAll" resultType="kr.ac.kopo.hanabit.product.vo.SavingProductVO">
+    <select id="selectAll" resultType="kr.ac.kopo.hanabit.product.v1.vo.SavingProductVO">
         select *
         from tb_saving_products
     </select>
 
-    <select id="selectOneById" parameterType="int" resultType="kr.ac.kopo.hanabit.product.vo.SavingProductVO">
+    <select id="selectOneById" parameterType="int" resultType="kr.ac.kopo.hanabit.product.v1.vo.SavingProductVO">
         select *
         from TB_SAVING_PRODUCTS
         where id = #{id}

@@ -38,7 +38,7 @@
 
                                             <td class="p-3"
                                                 style="width: 25%; background-color: #ece6f8; color: black;">가입
-                                                상품 명
+                                                상품명
                                             </td>
                                             <td class="p-3" style="width: 25%;">
                                                 <div style="color: black;"><h5>${ productVO.name }</h5></div>
@@ -82,11 +82,12 @@
                                                         id="exampleFormControlSelect1"
                                                         aria-label="Default select example">
                                                     <option selected>출금 계좌를 선택해주세요</option>
-                                                    <c:forEach items="${account }" var="account" varStatus="status">
-                                                        <c:if test="${account.accountType eq '입출금계좌' }">
-                                                            <option value="${account.accountNo}">[${account.bankCode}]
-                                                                | ${account.accountNo }
-                                                                | ${account.accountName }</option>
+                                                    <c:forEach items="${accountVOList}" var="accountVO">
+                                                        <c:if test="${accountVO.type eq '입출금' }">
+                                                            <option value="${accountVO.number}">
+                                                                [${accountVO.bankCode}]
+                                                                | ${accountVO.number }
+                                                                | ${accountVO.productName }</option>
                                                         </c:if>
                                                     </c:forEach>
                                                 </select>
@@ -117,44 +118,44 @@
                                         </tr>
 
 
-                                        <%--                                        <tr>--%>
-                                        <%--                                            <td class="p-3"--%>
-                                        <%--                                                style="width: 30%; background-color: #f8f8f8; color: black;">적립--%>
-                                        <%--                                                방법 선택--%>
-                                        <%--                                            </td>--%>
-                                        <%--                                            <td class="p-3 d-flex">--%>
-                                        <%--                                                <div class="form-check">--%>
-                                        <%--                                                    <input name="savingsType" class="form-check-input"--%>
-                                        <%--                                                           type="radio" value="savingsTypeFree" id="savingsTypeFree"/>--%>
-                                        <%--                                                    <label class="form-check-label" for="savingsTypeFree">--%>
-                                        <%--                                                        자유적립식(자유적금)</label>--%>
-                                        <%--                                                </div>--%>
-                                        <%--                                                <div class="form-check">--%>
-                                        <%--                                                    <input name="savingsType" class="form-check-input ms-2"--%>
-                                        <%--                                                           type="radio" value="savingsTypeRegular"--%>
-                                        <%--                                                           id="savingsTypeRegular" checked/> <label--%>
-                                        <%--                                                        class="form-check-label ms-1" for="savingsTypeRegular">--%>
-                                        <%--                                                    정액적립식(정기적금)</label>--%>
-                                        <%--                                                </div>--%>
-                                        <%--                                            </td>--%>
-                                        <%--                                        </tr>--%>
+                                        <%--                                                                                <tr>--%>
+                                        <%--                                                                                    <td class="p-3"--%>
+                                        <%--                                                                                        style="width: 30%; background-color: #f8f8f8; color: black;">적립--%>
+                                        <%--                                                                                        방법 선택--%>
+                                        <%--                                                                                    </td>--%>
+                                        <%--                                                                                    <td class="p-3 d-flex">--%>
+                                        <%--                                                                                        <div class="form-check">--%>
+                                        <%--                                                                                            <input name="savingsType" class="form-check-input"--%>
+                                        <%--                                                                                                   type="radio" value="savingsTypeFree" id="savingsTypeFree"/>--%>
+                                        <%--                                                                                            <label class="form-check-label" for="savingsTypeFree">--%>
+                                        <%--                                                                                                자유적립식(자유적금)</label>--%>
+                                        <%--                                                                                        </div>--%>
+                                        <%--                                                                                        <div class="form-check">--%>
+                                        <%--                                                                                            <input name="savingsType" class="form-check-input ms-2"--%>
+                                        <%--                                                                                                   type="radio" value="savingsTypeRegular"--%>
+                                        <%--                                                                                                   id="savingsTypeRegular" checked/> <label--%>
+                                        <%--                                                                                                class="form-check-label ms-1" for="savingsTypeRegular">--%>
+                                        <%--                                                                                            정액적립식(정기적금)</label>--%>
+                                        <%--                                                                                        </div>--%>
+                                        <%--                                                                                    </td>--%>
+                                        <%--                                                                                </tr>--%>
 
-                                        <%--                                        <tr>--%>
-                                        <%--                                            <td class="p-3 mt-1"--%>
-                                        <%--                                                style="width: 30%; background-color: #f8f8f8; color: black;">가입--%>
-                                        <%--                                                기간--%>
-                                        <%--                                            </td>--%>
-                                        <%--                                            <td class="p-3"><select class="form-select"--%>
-                                        <%--                                                                    id="exampleFormControlSelect2"--%>
-                                        <%--                                                                    aria-label="Default select example">--%>
-                                        <%--                                                <option selected>가입기간을 선택하세요</option>--%>
-                                        <%--                                                <c:forEach var="i" begin="6" end="60">--%>
-                                        <%--                                                    <option value="<c:out value="${i}" />"><c:out--%>
-                                        <%--                                                            value="${i}"/>개월--%>
-                                        <%--                                                    </option>--%>
-                                        <%--                                                </c:forEach>--%>
-                                        <%--                                            </select></td>--%>
-                                        <%--                                        </tr>--%>
+                                        <%--                                                                                <tr>--%>
+                                        <%--                                                                                    <td class="p-3 mt-1"--%>
+                                        <%--                                                                                        style="width: 30%; background-color: #f8f8f8; color: black;">가입--%>
+                                        <%--                                                                                        기간--%>
+                                        <%--                                                                                    </td>--%>
+                                        <%--                                                                                    <td class="p-3"><select class="form-select"--%>
+                                        <%--                                                                                                            id="exampleFormControlSelect2"--%>
+                                        <%--                                                                                                            aria-label="Default select example">--%>
+                                        <%--                                                                                        <option selected>가입기간을 선택하세요</option>--%>
+                                        <%--                                                                                        <c:forEach var="i" begin="6" end="60">--%>
+                                        <%--                                                                                            <option value="<c:out value="${i}" />"><c:out--%>
+                                        <%--                                                                                                    value="${i}"/>개월--%>
+                                        <%--                                                                                            </option>--%>
+                                        <%--                                                                                        </c:forEach>--%>
+                                        <%--                                                                                    </select></td>--%>
+                                        <%--                                                                                </tr>--%>
 
                                         <tr>
                                             <td class="p-3 mt-1"
@@ -241,6 +242,29 @@
     </div>
 
 </div>
+
+
+<%--<script type="text/javascript">--%>
+<%--    function getHanaBankApiServerAccounts() {--%>
+<%--        &lt;%&ndash;let memberUseId = ${member.useId};&ndash;%&gt;--%>
+<%--        $.ajax({--%>
+<%--            // url:'http://localhost:8082/v1/accounts/' + memberUseId,--%>
+<%--            url: 'http://localhost:8082/v1/accounts',--%>
+<%--            method: 'get',--%>
+<%--            // data: ,--%>
+<%--            success: function (response) {--%>
+<%--                alert("HanaBankApiServer에서 모든 계좌 조회 성공!");--%>
+<%--                console.log(response);--%>
+
+<%--            }, error: function () {--%>
+<%--                alert("HanaBankApiServer에서 모든 계좌 조회 실패...");--%>
+<%--            }--%>
+<%--        })--%>
+<%--    }--%>
+<%--</script>--%>
+
+
+<%--
 <script type="text/javascript">
     $(document)
         .ready(
@@ -294,8 +318,9 @@
                 }
             });
 </script>
+--%>
 
-
+<%--
 <div class="container">
 
     <div class="mb-3">
@@ -417,6 +442,7 @@
     </div>
 
 </div>
+--%>
 
 <%@ include file="/WEB-INF/view/layout/footer.jsp" %>
 </body>

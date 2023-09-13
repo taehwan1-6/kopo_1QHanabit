@@ -1,7 +1,7 @@
-package kr.ac.kopo.hanabit.product.service;
+package kr.ac.kopo.hanabit.product.v1.service;
 
-import kr.ac.kopo.hanabit.product.dao.SavingProductMapper;
-import kr.ac.kopo.hanabit.product.vo.SavingProductVO;
+import kr.ac.kopo.hanabit.product.v1.dao.SavingProductMapper;
+import kr.ac.kopo.hanabit.product.v1.vo.SavingProductVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
