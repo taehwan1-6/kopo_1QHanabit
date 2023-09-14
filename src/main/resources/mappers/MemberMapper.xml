@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.ac.kopo.hanabit.member.v1.dao.MemberMapper">
+
+    <select id="selectOneByUseridAndPassword" parameterType="kr.ac.kopo.hanabit.member.v1.vo.LoginVO"
+            resultType="kr.ac.kopo.hanabit.member.v1.vo.MemberVO">
+        select *
+        from TB_MEMBERS
+        where use_id = #{useId}
+          and password = #{password}
+    </select>
+
+
+</mapper>
