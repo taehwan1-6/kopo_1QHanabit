@@ -51,7 +51,7 @@
     <div class="container">
 
         <!-- logo -->
-        <a href="/" class="navbar-brand me-lg-5">
+        <a href="/" class="navbar-brand me-lg-5" style="margin-bottom: 1%">
             <img src="/assets/images/logo.png" alt="" class="logo-dark" height="40"/>
         </a>
 
@@ -98,12 +98,11 @@
             <!-- right menu -->
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item me-0">
-                    <a href="${pageContext.request.contextPath}/login" target="_blank"
+                    <a href="${pageContext.request.contextPath}/members/login"
                        class="nav-link d-lg-none">로그인</a>
-                    <a href="${pageContext.request.contextPath}/login" target="_blank"
+                    <a href="${pageContext.request.contextPath}/members/login"
                        class="btn btn-sm btn-light rounded-pill d-none d-lg-inline-flex">
-                        <i class="mdi mdi-account me-2"></i> 로그인
-                    </a>
+                        <i class="mdi mdi-account me-1" style="margin-top: 3%"></i> 로그인</a>
                 </li>
             </ul>
 
