@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
-    <%@include file="../layout/head.jsp" %>
+    <%@include file="../../layout/head.jsp" %>
 </head>
 
 <%--    <body class="loading authentication-bg" data-../layout-config='{"darkMode":false}'>--%>
@@ -31,12 +31,15 @@
                             <%--                            <p class="text-muted mb-4">Enter your email address and password to access admin panel.</p>--%>
                         </div>
 
-                        <form action="#">
+                        <form action="/members/login" method="post">
 
                             <div class="mb-3">
                                 <label for="emailaddress" class="form-label">아이디</label>
-                                <input class="form-control" type="email" id="emailaddress" required=""
-                                       placeholder="아이디">
+                                <input class="form-control" type="text" id="emailaddress" required=""
+                                       placeholder="아이디" name="useId">
+                                <%--                                <label for="emailaddress" class="form-label">아이디</label>--%>
+                                <%--                                <input class="form-control" type="email" id="emailaddress" required=""--%>
+                                <%--                                       placeholder="아이디" name="useId">--%>
                             </div>
 
                             <div class="mb-3">
@@ -44,7 +47,7 @@
                                 <label for="password" class="form-label">비밀번호</label>
                                 <div class="input-group input-group-merge">
                                     <input type="password" id="password" class="form-control"
-                                           placeholder="비밀번호">
+                                           placeholder="비밀번호" name="password">
                                     <div class="input-group-text" data-password="false">
                                         <span class="password-eye"></span>
                                     </div>
@@ -53,7 +56,7 @@
 
                             <div class="mb-3 mb-3">
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="checkbox-signin" checked>
+                                    <input type="checkbox" class="form-check-input" id="checkbox-signin">
                                     <label class="form-check-label" for="checkbox-signin">아이디 저장</label>
                                 </div>
                             </div>
@@ -84,7 +87,7 @@
 <!-- end page -->
 
 
-<%@include file="../layout/footer.jsp" %>
+<%@include file="../../layout/footer.jsp" %>
 
 </body>
 </html>
