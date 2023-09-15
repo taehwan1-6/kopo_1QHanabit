@@ -1,4 +1,5 @@
-*.yml
+/src/main/resources/application.yml
+/src/main/resources/logback-spring.xml
 
 HELP.md
 .gradle
