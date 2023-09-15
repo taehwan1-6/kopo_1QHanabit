@@ -82,12 +82,12 @@
                                                         id="exampleFormControlSelect1"
                                                         aria-label="Default select example">
                                                     <option selected>출금 계좌를 선택해주세요</option>
-                                                    <c:forEach items="${accountVOList}" var="accountVO">
-                                                        <c:if test="${accountVO.type eq '입출금' }">
-                                                            <option value="${accountVO.number}">
-                                                                [${accountVO.bankCode}]
-                                                                | ${accountVO.number }
-                                                                | ${accountVO.productName }</option>
+                                                    <c:forEach items="${basicAccounts}" var="basicAccount">
+                                                        <c:if test="${basicAccount.type eq '입출금' }">
+                                                            <option value="${basicAccount.number}">
+                                                                [${basicAccount.bankCode}]
+                                                                | ${basicAccount.number }
+                                                                | ${basicAccount.productName }</option>
                                                         </c:if>
                                                     </c:forEach>
                                                 </select>
