@@ -28,13 +28,13 @@ public class MemberController {
     }
 
     @PostMapping("/login")
-    public String login(@Valid @ModelAttribute("loginVO") LoginVO loginVO, Model model, BindingResult bindingResult) {
+    public String login(@Valid @ModelAttribute("loginVO") LoginVO loginVO,
+                        Model model, BindingResult bindingResult) {
 
         MemberVO memberVO = memberService.login(loginVO);
 
         if (memberVO == null || bindingResult.hasErrors()) {
             String loginFail = "로그인 실패. 다시 로그인 해주세요!";
-//            model.addAttribute("loginFail", loginFail);
             bindingResult.reject("loginFail", loginFail);
             return "member/login/login-form";
         } else {
