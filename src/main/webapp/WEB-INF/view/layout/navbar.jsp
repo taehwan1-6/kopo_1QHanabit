@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <style>
     /* 보라색 테두리 스타일을 정의합니다. */
@@ -97,13 +98,25 @@
 
             <!-- right menu -->
             <ul class="navbar-nav ms-auto align-items-center">
-                <li class="nav-item me-0">
-                    <a href="${pageContext.request.contextPath}/members/login"
-                       class="nav-link d-lg-none">로그인</a>
-                    <a href="${pageContext.request.contextPath}/members/login"
-                       class="btn btn-sm btn-light rounded-pill d-none d-lg-inline-flex">
-                        <i class="mdi mdi-account me-1" style="margin-top: 3%"></i> 로그인</a>
-                </li>
+                <c:if test="${empty currentUser}">
+                    <li class="nav-item me-0">
+                        <a href="${pageContext.request.contextPath}/members/login"
+                           class="nav-link d-lg-none">로그인</a>
+                        <a href="${pageContext.request.contextPath}/members/login"
+                           class="btn btn-sm btn-light rounded-pill d-none d-lg-inline-flex">
+                            <i class="mdi mdi-account me-1" style="margin-top: 3%"></i> 로그인</a>
+                    </li>
+                </c:if>
+                <c:if test="${not empty currentUser}">
+                    <li class="nav-item me-0">
+                        <span>${currentUser.name} 고객님</span>
+                        <a href="${pageContext.request.contextPath}/members/logout"
+                           class="nav-link d-lg-none">로그아웃</a>
+                        <a href="${pageContext.request.contextPath}/members/logout"
+                           class="btn btn-sm btn-light rounded-pill d-none d-lg-inline-flex">
+                            <i class="mdi mdi-account me-1" style="margin-top: 3%"></i> 로그아웃</a>
+                    </li>
+                </c:if>
             </ul>
 
         </div>
