@@ -1,9 +1,9 @@
-package kr.ac.kopo.hanabit.api.account.v1.entity;
+package kr.ac.kopo.hanabit.api.account.v1.vo;
 
 import lombok.Getter;
 
 @Getter
-public class AccountEntity {
+public class AccountVO {
 
 	private String number;
 	private int password;

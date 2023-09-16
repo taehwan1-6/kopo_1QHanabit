@@ -2,15 +2,15 @@ package kr.ac.kopo.hanabit.product.v1.controller;
 
 import java.util.List;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.SessionAttribute;
 
-import kr.ac.kopo.hanabit.api.account.v1.dto.response.AccountDtoResponse;
 import kr.ac.kopo.hanabit.api.account.v1.service.AccountService;
+import kr.ac.kopo.hanabit.api.account.v1.vo.AccountVO;
 import kr.ac.kopo.hanabit.product.v1.service.ChallengeDepositProductService;
 import kr.ac.kopo.hanabit.product.v1.vo.ChallengeDepositProductVO;
 import lombok.RequiredArgsConstructor;
@@ -62,14 +62,15 @@ public class ChallengeDepositProductController {
 	}
 
 	@GetMapping("/{id}/add")
-	public String addForm(@PathVariable("id") Long id, Model model) {
+	public String addForm(@PathVariable("id") Long id
+		, @SessionAttribute("hanaBankApiKey") String apiKey
+		, Model model) {
 		ChallengeDepositProductVO productVO = productService.getOneById(id);
-
 		model.addAttribute("productVO", productVO);
 
 		log.info(String.valueOf(productVO));
 
-		ResponseEntity<AccountDtoResponse> basicAccounts = accountService.getAllBasic();
+		List<AccountVO> basicAccounts = accountService.getAllBasic(apiKey);
 		model.addAttribute("basicAccounts", basicAccounts);
 
 		return "product/challengedeposit/challenge-deposit-add-form";
