@@ -9,17 +9,26 @@ public class ChallengeDepositProductVO {
     private String thumbnailImg;
     private String name;
     private String description;
+    private String type;
+    private int period;
+
     private int numberSubscribers;
     private int limitedSubscribers;
-    private int period;
-    private int authenticationFrequency;
+
+    private int weeklyAuthFrequency;
+    private int dailyAuthFrequency;
+
     private double baseRate;
     private double preferRate;
+
     private int minPayment;
     private int maxPayment;
+
     private String authenticationDescription;
     private String authenticationImg1;
     private String authenticationImg2;
     private String authenticationImg3;
 
+    private String createdAt;
+    private String modifiedAt;
 }
