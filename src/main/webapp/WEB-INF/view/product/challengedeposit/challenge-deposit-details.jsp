@@ -60,7 +60,11 @@
                                     </span>
                                 <span class="pe-2 text-nowrap">
                                         <i class="uil uil-thumbs-up"></i>
-                                        주 <b>${productVO.authenticationFrequency}</b> 일
+                                        주 <b>${productVO.weeklyAuthFrequency}</b> 일
+                                    </span>
+                                <span class="pe-2 text-nowrap">
+                                        <i class="uil uil-thumbs-up"></i>
+                                        일 <b>${productVO.dailyAuthFrequency}</b> 회
                                     </span>
                                 <span class="pe-2 text-nowrap">
                                         <i class="uil uil-money-insert"></i>
